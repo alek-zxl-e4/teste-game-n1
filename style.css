@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-bottom: 150px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+button{
+    background: white;
+    border: solid 1px gray;
+    border-radius: 5px;
+    color: black;
+    height: 20px;
+    width: 160px;
+}
+button:hover{
+    background:gray;
+}
+h1{
+    color: white;
+    font-size: 50px;
+    position: relative;
+}
