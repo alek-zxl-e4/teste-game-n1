@@ -1,9 +1,20 @@
+:root{
+   --progresso-j: 50%;
+   --progresso-m: 50%;
+}
+@font-face{
+    font-family: "DynaPuff";
+    src: url("./fonts/DynaPuff-VariableFont_wdth,wght.ttf");
+}
 body{
     margin: 0;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background:black;
+    background-image: url(imagens/img005.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,4 +44,72 @@ h1{
     color: white;
     font-size: 50px;
     position: relative;
+    font-family: "DynaPuff";
+}
+#configs{
+    display: none;
+    background: black;
+    color: white;
+    position: fixed;
+    border: solid gray 3px;
+    border-radius: 3px;
+    width: 500px;
+    height: 500px;
+    flex-direction: column;
+}
+#cabecalhoMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#conf{
+    background: black;
+    color: white;
+    border: none;
+    align-items: center;
+    margin: 10px;
+}
+#Fmenu{
+    color: darkred;
+    font-weight: 800;
+    font-size: 15px;
+    border: solid 2.5px darkred;
+    border-radius: 15px;
+    background: red;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin: 10px;
+}
+#menuIn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    height: 150px;
+}
+#menuIn2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#menuIn3{
+    display: flex;
+    flex-direction: row;
+}
+#ivCtrl{
+margin-left: 261.2px;
+}
+#checkP{
+margin-left: 300px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    appearance: none;
+    margin-top: -4px;
 }

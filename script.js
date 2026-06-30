@@ -45,3 +45,15 @@ function animar() {
     requestAnimationFrame(animar);
 }
 animar();
+
+function configsMenu(){
+    const configs =
+document.getElementById("configs");
+configs.style.display = "block";
+}
+
+function xMenu() {
+    const configs =
+document.getElementById("configs");
+configs.style.display = "none";
+}

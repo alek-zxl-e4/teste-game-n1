@@ -10,8 +10,30 @@
     <div class="menu">
         <h1 id="titulo">Meu Jogo</h1>
         <button id="botao1">Jogar</button>
-        <button id="botao2">Configurações</button>
+        <button id="botao2" onclick="configsMenu()">Configurações</button>
         <button id="botao3">Créditos</button>
+    </div>
+    <div id="configs">
+        <div id="cabecalhoMenu">
+        <h2 id="conf">Configurações</h2>
+        <button id="Fmenu" onclick="xMenu()">X</button>
+        </div>
+        <div id="menuIn">
+            <label for="volumeJ">Volume do jogo</label>
+            <input type="range" id="volumeJ" min="0" max="100" value="50">
+            <span id="porcentagemJ">50%</span>
+            <label for="volumeM">Volume da música</label>
+            <input type="range" id="volumeM" min="0" max="100" value="50">
+            <span id="porcentagemM">50%</span>
+        </div>
+        <div id="menuIn2">
+            <label for="ivCtrl">Inverter controles</label>
+            <input type="checkbox" id="ivCtrl" checked>
+        </div>
+        <div id="menuIn3">
+            <label for="checkP">Checkpoint</label>
+            <input type="checkbox" id="checkP" checked>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
